@@ -1,135 +1,114 @@
 <html>
 <head>
 <style type="text/css">
-
 * {
-	box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
+	margin:0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #wrapper {
-	max-width: 800px;
+	max-width:800px;
 	margin: 0 auto;
-	border: 1px solid #ccc;
+border: 1px solid #ccc;
 }
-
-#content {
-	padding: 0 15px 6px;
+#content{
+padding:0 15px 6px;
 }
-
-/* top header (replaced with mockup image) */
 
 #header-image img {
 	width: 100%;
-	display: block;
+	display:block;
 }
-
-/* hero row */
 
 #hero {
-	display: flex;
+display: flex;
 	position: relative;
-	gap: 6px;
+gap: 6px;
 }
 
-#hero-left {
+#hero-left{
 	flex: 45 1 0%;
 	display: flex;
-	flex-direction: column;
-	gap: 6px;
+    flex-direction: column;
+	gap:6px;
 }
 
 #hero-right {
-	flex: 55 1 0%;
+flex: 55 1 0%;
 }
 
-#hero-left img {
-	width: 100%;
+#hero-left img{
+width: 100%;
 	display: block;
 }
 
 #hero-right img {
-	width: 100%;
-	height: 100%;
+	width:100%;
+height: 100%;
 	object-fit: cover;
 	display: block;
 }
 
-/* sale row under hero-left */
-
 #sale-row img {
 	width: 100%;
-	display: block;
+display: block;
 }
-
-/* bottom row */
 
 #bottom {
-	display: flex;
+	display:flex;
 	gap: 6px;
-	margin-top: 6px;
+margin-top: 6px;
 }
 
-.bottom-box {
+.bottom-box{
 	flex: 1;
 }
-
 .bottom-box.wide {
-	flex: 2;
+flex: 2;
 }
 
 .bottom-box img {
 	width: 100%;
-	display: block;
+	display:block;
 }
 
-.clear {
-	clear: both;
-}
-
+.clear{ clear: both; }
 </style>
 </head>
 <body>
-
 <div id="wrapper">
-
 	<div id="header-image">
-		<img src="images/header.jpg" alt="Ken's Baby Store header">
+	<img src="images/header.jpg" alt="Ken's Baby Store header">
 	</div>
 
-	<div id="content">
-
+<div id="content">
 		<div id="hero">
 			<div id="hero-left">
-				<img src="images/folded-clothes.png" alt="Baby clothes on shelf">
-
+			<img src="images/folded-clothes.png" alt="Baby clothes on shelf">
 				<div id="sale-row">
-					<img src="images/sale-box.png" alt="Selected items sale 20-70% off">
+				<img src="images/sale-box.png" alt="Selected items sale 20-70% off">
 				</div>
 			</div>
-			<div id="hero-right">
-				<img src="images/kids-tree.png" alt="Kids with christmas tree">
-			</div>
+		<div id="hero-right">
+			<img src="images/kids-tree.png" alt="Kids with christmas tree">
 		</div>
-		<div class="clear"></div>
+		</div>
+	<div class="clear"></div>
 
 		<div id="bottom">
-			<div class="bottom-box">
-				<img src="images/safe-sleeping.png" alt="Baby Safe Sleeping">
-			</div>
+		<div class="bottom-box">
+			<img src="images/safe-sleeping.png" alt="Baby Safe Sleeping">
+		</div>
 			<div class="bottom-box wide">
 				<img src="images/update-shop.png" alt="Let's update and Shop Our Online Store">
 			</div>
 		</div>
-		<div class="clear"></div>
-
-	</div>
-
+	<div class="clear"></div>
 </div>
-
+</div>
 </body>
 </html>
