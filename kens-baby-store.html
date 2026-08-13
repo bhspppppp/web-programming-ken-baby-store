@@ -40,7 +40,6 @@ background:white;
  float:right;
 width:342px;height:58px;
  margin-top:10px;margin-right:14px;
- overflow:hidden;
 }
 .free-text {
 float:left;width:107px;height:58px;
@@ -50,11 +49,11 @@ float:left;width:107px;height:58px;
  border:1px solid #8298ac;border-right:0;
  border-radius:11px 0 0 11px;
 }
-.phone-picture {float:left;width:235px;height:58px;overflow:hidden;position:relative;}
-.phone-picture img {position:absolute;width:255px;height:70px;left:-5px;top:-9px;}
+.phone-picture {float:left;width:235px;height:58px;}
+.phone-picture img {width:235px;height:58px;display:block;}
 
 /* small color line */
-.color-line {height:7px;margin:1px 14px 0 14px;overflow:hidden;}
+.color-line {height:7px;margin:1px 14px 0 14px;}
 .color-line span {height:7px;float:left;display:block;}
 .c1 {width:45px;background:#f4a383}.c2 {width:11px;background:#91c9ca}.c3 {width:21px;background:#a58aaa}
 .c4 {width:75px;background:#8fb9aa}.c5 {width:20px;background:#ec97aa}.c6 {width:54px;background:#e8b58c}
@@ -71,21 +70,21 @@ margin-left:14px;width:766px;
 #menu a:hover {color:#db7782;}
 .flags {
  position:absolute;right:0;top:5px;
- width:98px;height:24px;overflow:hidden;
+ width:98px;height:24px;
 }
-.flags img {position:absolute;width:190px;height:68px;left:-27px;top:-24px;max-width:none;}
+.flags img {width:98px;height:24px;display:block;}
 
 /* main pictures */
 #main {margin-left:14px;width:765px;}
 .left-side {float:left;width:335px;margin-right:5px;}
-.gift-photo {width:335px;height:220px;overflow:hidden;position:relative;}
-.gift-photo img {position:absolute;width:794px;height:606px;left:-14px;top:-127px;}
+.gift-photo {width:335px;height:220px;}
+.gift-photo img {width:335px;height:220px;display:block;}
 
 .small-photo {
  float:left;width:102px;height:156px;
-margin-top:7px;overflow:hidden;position:relative;
+margin-top:7px;
 }
-.small-photo img {position:absolute;width:794px;height:606px;left:-14px;top:-354px;}
+.small-photo img {width:102px;height:156px;display:block;}
 /* sale box */
 .sale {
 float:left;width:233px;height:156px;
@@ -99,8 +98,8 @@ float:left;width:233px;height:156px;
 .off {position:absolute;right:8px;top:80px;font-size:28px;font-weight:bold;}
 
 /* children picture */
-.children-photo {float:left;width:425px;height:383px;overflow:hidden;position:relative;}
-.children-photo img {position:absolute;width:794px;height:606px;left:-354px;top:-127px;max-width:none;}
+.children-photo {float:left;width:425px;height:383px;}
+.children-photo img {width:425px;height:383px;display:block;}
 
 /* stop the float */
 .clear {clear:both;}
@@ -109,9 +108,8 @@ float:left;width:233px;height:156px;
 #bottom {
 width:766px;height:86px;
  margin:6px 0 0 14px;
-overflow:hidden;position:relative;
 }
-#bottom img {position:absolute;width:862px;height:116px;left:-23px;top:-13px;max-width:none;}
+#bottom img {width:766px;height:86px;display:block;}
 </style>
 </head>
 <body>
@@ -126,7 +124,7 @@ overflow:hidden;position:relative;
 
   <div class="contact-box">
     <div class="free-text">ADD 1,000 Baht<br>TO GET FREE<br>SHIPPING*</div>
-   <div class="phone-picture"><img src="images/phone-box.png" alt="call for more detail"></div>
+   <div class="phone-picture"><img src="images/phone-picture.png" alt="call for more detail"></div>
   </div>
  <div class="clear"></div>
 </div>
@@ -144,15 +142,15 @@ overflow:hidden;position:relative;
   <a href="#">Home</a><a href="#">About us</a>
   <a href="#">Online store</a><a href="#">What's new</a>
   <a href="#">Store finder</a><a href="#">Contact us</a>
-   <div class="flags"><img src="images/flags.png" alt="language flags"></div>
+   <div class="flags"><img src="images/language-flags.png" alt="language flags"></div>
  </div>
 
 <!-- main pictures and sale -->
 <div id="main">
  <div class="left-side">
-  <div class="gift-photo"><img src="images/baby-store-reference.jpg" alt="clothes and gift bags"></div>
+  <div class="gift-photo"><img src="images/gift-photo.jpg" alt="clothes and gift bags"></div>
 
-   <div class="small-photo"><img src="images/baby-store-reference.jpg" alt="baby clothes basket"></div>
+   <div class="small-photo"><img src="images/small-photo.jpg" alt="baby clothes basket"></div>
   <div class="sale">
    <b>Selected items sale!</b><br>
     <span class="sale-number">20 - 70</span><span class="percent">%</span><br>
@@ -160,13 +158,13 @@ overflow:hidden;position:relative;
   </div>
  </div>
 
- <div class="children-photo"><img src="images/baby-store-reference.jpg" alt="children photo"></div>
+ <div class="children-photo"><img src="images/children-photo.jpg" alt="children photo"></div>
  <div class="clear"></div>
 </div>
 
  <!-- bottom information -->
  <div id="bottom">
-  <img src="images/bottom-strip.png" alt="baby store information">
+  <img src="images/bottom-information.png" alt="baby store information">
  </div>
 </div>
 
