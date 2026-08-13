@@ -1,114 +1,155 @@
+<!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
+<title>Ken's Baby Store</title>
 <style type="text/css">
-* {
-box-sizing: border-box;
-}
-
 body {
-	margin:0;
-    font-family: Arial, Helvetica, sans-serif;
+ margin:0;
+ background-color:white;
+ font-family:Arial, Helvetica, sans-serif;
+ color:#77745f;
 }
 
-#wrapper {
-	max-width:800px;
-	margin: 0 auto;
-border: 1px solid #ccc;
-}
-#content{
-padding:0 15px 6px;
+/* I use fixed size to make it look like the example */
+#website {
+width:794px;
+ margin:8px auto;
+background:white;
 }
 
-#header-image img {
-	width: 100%;
-	display:block;
+#top { height:74px; position:relative; }
+.logo {float:left;width:425px;text-align:center;}
+.logo h1 {
+ margin:5px 0 0 0;
+ color:#51246e;
+ font-family:Georgia, "Times New Roman", serif;
+ font-size:46px;
+ line-height:51px;
 }
+.little-title {color:#91c9ac;font-size:13px;letter-spacing:1px;margin-left:150px;}
 
-#hero {
-display: flex;
-	position: relative;
-gap: 6px;
+.contact-box {
+ float:right;
+width:339px;height:54px;
+ margin-top:10px;margin-right:14px;
+ background-color:#dbeef5;
+ border:1px solid #8298ac;
+ border-radius:11px;
+ overflow:hidden;
 }
+.free-text {
+float:left;width:89px;height:45px;
+ padding:7px 9px 3px 8px;
+ color:#9c82b0;font-size:11px;
+ border-right:1px solid #91a4b2;
+}
+.phone-picture {float:left;width:231px;height:54px;overflow:hidden;position:relative;}
+.phone-picture img {position:absolute;width:255px;height:70px;left:-5px;top:-8px;}
 
-#hero-left{
-	flex: 45 1 0%;
-	display: flex;
-    flex-direction: column;
-	gap:6px;
-}
+.color-line {height:7px;margin:1px 14px 0 14px;overflow:hidden;}
+.color-line span {height:7px;float:left;display:block;}
+.c1 {width:45px;background:#f4a383}.c2 {width:11px;background:#91c9ca}.c3 {width:21px;background:#a58aaa}
+.c4 {width:75px;background:#8fb9aa}.c5 {width:20px;background:#ec97aa}.c6 {width:54px;background:#e8b58c}
+.c7 {width:34px;background:#d7dc88}.c8 {width:29px;background:#7da58b}.c9 {width:49px;background:#8493bd}
+.c10 {width:105px;background:#e3bf9a}.c11 {width:169px;background:#8bc5be}.c12 {width:153px;background:#a78bb4}
 
-#hero-right {
-flex: 55 1 0%;
+#menu {
+ height:35px;
+margin-left:14px;width:766px;
+ position:relative;white-space:nowrap;
 }
+#menu a {float:left;color:#77745f;text-decoration:none;font-size:14px;margin:9px 22px 0 26px;}
+#menu a:hover {color:#db7782;}
+.flags {
+ position:absolute;right:-1px;top:5px;
+ border:1px solid #4c4545;background:white;
+ width:98px;height:24px;overflow:hidden;
+}
+.flags img {position:absolute;width:190px;height:68px;left:-27px;top:-25px;max-width:none;}
 
-#hero-left img{
-width: 100%;
-	display: block;
-}
+#main {margin-left:14px;width:765px;}
+.left-side {float:left;width:335px;margin-right:5px;}
+.gift-photo {width:335px;height:220px;overflow:hidden;position:relative;}
+.gift-photo img {position:absolute;width:794px;height:606px;left:-14px;top:-127px;}
 
-#hero-right img {
-	width:100%;
-height: 100%;
-	object-fit: cover;
-	display: block;
+.small-photo {
+ float:left;width:102px;height:156px;
+margin-top:7px;overflow:hidden;position:relative;
 }
+.small-photo img {position:absolute;width:794px;height:606px;left:-14px;top:-354px;}
+.sale {
+float:left;width:215px;height:138px;
+ padding:18px 7px 0 11px;margin-top:7px;
+ background-color:#ef7884;color:white;
+ font-size:18px;line-height:20px;position:relative;
+}
+.sale-number {font-size:60px;line-height:62px;font-weight:bold;letter-spacing:-4px;}
+.percent {font-size:31px;font-weight:bold;position:relative;top:-18px;}
+.off {position:absolute;right:8px;top:80px;font-size:28px;font-weight:bold;}
 
-#sale-row img {
-	width: 100%;
-display: block;
-}
+.children-photo {float:left;width:425px;height:383px;overflow:hidden;position:relative;}
+.children-photo img {position:absolute;width:794px;height:606px;left:-354px;top:-127px;max-width:none;}
+.clear {clear:both;}
 
 #bottom {
-	display:flex;
-	gap: 6px;
-margin-top: 6px;
+width:765px;height:85px;
+ margin:6px 0 0 14px;
+overflow:hidden;position:relative;
 }
-
-.bottom-box{
-	flex: 1;
-}
-.bottom-box.wide {
-flex: 2;
-}
-
-.bottom-box img {
-	width: 100%;
-	display:block;
-}
-
-.clear{ clear: both; }
+#bottom img {position:absolute;width:846px;height:114px;left:-12px;top:-9px;max-width:none;}
 </style>
 </head>
 <body>
-<div id="wrapper">
-	<div id="header-image">
-	<img src="images/header.jpg" alt="Ken's Baby Store header">
-	</div>
 
-<div id="content">
-		<div id="hero">
-			<div id="hero-left">
-			<img src="images/folded-clothes.png" alt="Baby clothes on shelf">
-				<div id="sale-row">
-				<img src="images/sale-box.png" alt="Selected items sale 20-70% off">
-				</div>
-			</div>
-		<div id="hero-right">
-			<img src="images/kids-tree.png" alt="Kids with christmas tree">
-		</div>
-		</div>
-	<div class="clear"></div>
+<div id="website">
+ <div id="top">
+   <div class="logo">
+    <h1>Ken's Baby Store</h1>
+     <div class="little-title">The touch of love</div>
+   </div>
 
-		<div id="bottom">
-		<div class="bottom-box">
-			<img src="images/safe-sleeping.png" alt="Baby Safe Sleeping">
-		</div>
-			<div class="bottom-box wide">
-				<img src="images/update-shop.png" alt="Let's update and Shop Our Online Store">
-			</div>
-		</div>
-	<div class="clear"></div>
+  <div class="contact-box">
+    <div class="free-text">ADD 1,000 Baht<br>TO GET FREE<br>SHIPPING*</div>
+   <div class="phone-picture"><img src="images/phone-box.png" alt="call for more detail"></div>
+  </div>
+ <div class="clear"></div>
 </div>
+
+<div class="color-line">
+ <span class="c1"></span><span class="c2"></span><span class="c3"></span>
+ <span class="c4"></span><span class="c5"></span><span class="c6"></span>
+ <span class="c7"></span><span class="c8"></span><span class="c9"></span>
+ <span class="c10"></span><span class="c11"></span><span class="c12"></span>
 </div>
+
+ <div id="menu">
+  <a href="#">Home</a><a href="#">About us</a>
+  <a href="#">Online store</a><a href="#">What's new</a>
+  <a href="#">Store finder</a><a href="#">Contact us</a>
+   <div class="flags"><img src="images/flags.png" alt="language flags"></div>
+ </div>
+
+<div id="main">
+ <div class="left-side">
+  <div class="gift-photo"><img src="images/baby-store-reference.jpg" alt="clothes and gift bags"></div>
+
+   <div class="small-photo"><img src="images/baby-store-reference.jpg" alt="baby clothes basket"></div>
+  <div class="sale">
+   <b>Selected items sale!</b><br>
+    <span class="sale-number">20 - 70</span><span class="percent">%</span><br>
+   <span class="off">off</span>
+  </div>
+ </div>
+
+ <div class="children-photo"><img src="images/baby-store-reference.jpg" alt="children photo"></div>
+ <div class="clear"></div>
+</div>
+
+ <div id="bottom">
+  <img src="images/bottom-strip.png" alt="baby store information">
+ </div>
+</div>
+
 </body>
 </html>
