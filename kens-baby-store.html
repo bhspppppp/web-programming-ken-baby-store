@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ken's Baby Store</title>
 <style type="text/css">
+/* page style */
 body {
  margin:0;
  min-width:810px;
@@ -13,14 +14,17 @@ body {
  color:#77745f;
 }
 
-/* I use fixed size to make it look like the example */
+/* main website box */
 #website {
 width:794px;
  margin:8px auto;
 background:white;
 }
 
+/* top part */
 #top { height:74px; position:relative; }
+
+/* store name */
 .logo {float:left;width:425px;text-align:center;}
 .logo h1 {
  margin:5px 0 0 0;
@@ -31,6 +35,7 @@ background:white;
 }
 .little-title {color:#91c9ac;font-size:13px;letter-spacing:1px;margin-left:150px;}
 
+/* phone area */
 .contact-box {
  float:right;
 width:342px;height:58px;
@@ -48,6 +53,7 @@ float:left;width:107px;height:58px;
 .phone-picture {float:left;width:235px;height:58px;overflow:hidden;position:relative;}
 .phone-picture img {position:absolute;width:255px;height:70px;left:-5px;top:-9px;}
 
+/* small color line */
 .color-line {height:7px;margin:1px 14px 0 14px;overflow:hidden;}
 .color-line span {height:7px;float:left;display:block;}
 .c1 {width:45px;background:#f4a383}.c2 {width:11px;background:#91c9ca}.c3 {width:21px;background:#a58aaa}
@@ -55,6 +61,7 @@ float:left;width:107px;height:58px;
 .c7 {width:34px;background:#d7dc88}.c8 {width:29px;background:#7da58b}.c9 {width:49px;background:#8493bd}
 .c10 {width:105px;background:#e3bf9a}.c11 {width:169px;background:#8bc5be}.c12 {width:153px;background:#a78bb4}
 
+/* menu links */
 #menu {
  height:35px;
 margin-left:14px;width:766px;
@@ -68,6 +75,7 @@ margin-left:14px;width:766px;
 }
 .flags img {position:absolute;width:190px;height:68px;left:-27px;top:-24px;max-width:none;}
 
+/* main pictures */
 #main {margin-left:14px;width:765px;}
 .left-side {float:left;width:335px;margin-right:5px;}
 .gift-photo {width:335px;height:220px;overflow:hidden;position:relative;}
@@ -78,6 +86,7 @@ margin-left:14px;width:766px;
 margin-top:7px;overflow:hidden;position:relative;
 }
 .small-photo img {position:absolute;width:794px;height:606px;left:-14px;top:-354px;}
+/* sale box */
 .sale {
 float:left;width:233px;height:156px;
  padding:18px 7px 0 11px;margin-top:7px;
@@ -89,10 +98,14 @@ float:left;width:233px;height:156px;
 .percent {font-size:31px;font-weight:bold;position:relative;top:-18px;}
 .off {position:absolute;right:8px;top:80px;font-size:28px;font-weight:bold;}
 
+/* children picture */
 .children-photo {float:left;width:425px;height:383px;overflow:hidden;position:relative;}
 .children-photo img {position:absolute;width:794px;height:606px;left:-354px;top:-127px;max-width:none;}
+
+/* stop the float */
 .clear {clear:both;}
 
+/* bottom information */
 #bottom {
 width:766px;height:86px;
  margin:6px 0 0 14px;
@@ -104,6 +117,7 @@ overflow:hidden;position:relative;
 <body>
 
 <div id="website">
+ <!-- top part -->
  <div id="top">
    <div class="logo">
     <h1>Ken's Baby Store</h1>
@@ -117,6 +131,7 @@ overflow:hidden;position:relative;
  <div class="clear"></div>
 </div>
 
+<!-- small color line -->
 <div class="color-line">
  <span class="c1"></span><span class="c2"></span><span class="c3"></span>
  <span class="c4"></span><span class="c5"></span><span class="c6"></span>
@@ -124,6 +139,7 @@ overflow:hidden;position:relative;
  <span class="c10"></span><span class="c11"></span><span class="c12"></span>
 </div>
 
+ <!-- menu -->
  <div id="menu">
   <a href="#">Home</a><a href="#">About us</a>
   <a href="#">Online store</a><a href="#">What's new</a>
@@ -131,6 +147,7 @@ overflow:hidden;position:relative;
    <div class="flags"><img src="images/flags.png" alt="language flags"></div>
  </div>
 
+<!-- main pictures and sale -->
 <div id="main">
  <div class="left-side">
   <div class="gift-photo"><img src="images/baby-store-reference.jpg" alt="clothes and gift bags"></div>
@@ -147,6 +164,7 @@ overflow:hidden;position:relative;
  <div class="clear"></div>
 </div>
 
+ <!-- bottom information -->
  <div id="bottom">
   <img src="images/bottom-strip.png" alt="baby store information">
  </div>
